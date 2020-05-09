@@ -6,7 +6,7 @@ import java.awt.event.*;
 */
 
 
-public class Richard extends Applet implements ActionListener {
+public class C1 extends Applet implements ActionListener {
    Button play,stop;
    AudioClip audioClip;
 
@@ -17,7 +17,7 @@ public class Richard extends Applet implements ActionListener {
       stop = new Button("Stop");
       add(stop);
       stop.addActionListener(this);
-      audioClip = getAudioClip(getCodeBase(), "yes-2.wav");
+      audioClip = getAudioClip(getCodeBase(), "sound.wav");//here 'sound' can be any .wav extension sound 
    }
    public void actionPerformed(ActionEvent ae) {
       if (ae.getActionCommand().equals("Play")) {
