@@ -1,12 +1,12 @@
 import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
-/* <Applet code=Richard width= 600 height=600> 
+/* <Applet code=Appletprog width= 600 height=600> 
 </Applet>
 */
 
 
-public class Richard extends Applet implements ActionListener {
+public class Appletprog extends Applet implements ActionListener {
    Button play,stop;
    AudioClip audioClip;
 
@@ -17,7 +17,7 @@ public class Richard extends Applet implements ActionListener {
       stop = new Button("Stop");
       add(stop);
       stop.addActionListener(this);
-      audioClip = getAudioClip(getCodeBase(), "yes-2.wav");
+      audioClip = getAudioClip(getCodeBase(), "<sound>.wav");//sound can be any sound with .wav extension
    }
    public void actionPerformed(ActionEvent ae) {
       if (ae.getActionCommand().equals("Play")) {
